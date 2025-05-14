@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Перелік науково-дослідницьких робіт учнів-членів Малої академії наук України у 2024 році</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Дані з JSON</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="filters">
+                <input type="text" id="search-input" placeholder="Пошук за назвою...">
+                <select id="region-filter">
+                    <option value="">Всі області</option>
+                </select>
+                <select id="record-count">
+                    <option value="10">10</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                    <option value="custom">Кастомна кількість</option>
+                </select>
+                <input type="number" id="custom-count" placeholder="Введіть кількість" style="display: none;">
+            </div>
+            <div id="card-container" class="card-container">
+                <!-- Картки будуть завантажені тут -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Website</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
