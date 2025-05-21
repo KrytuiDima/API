@@ -11,12 +11,19 @@
         <h1>Дані з JSON</h1>
     </header>
     <main>
-        <div class="container">
-            <div class="filters">
-                <input type="text" id="search-input" placeholder="Пошук за назвою...">
-                <select id="region-filter">
-                    <option value="">Всі області</option>
-                </select>
+        <div class="filters">
+            <select id="search-by">
+                <option value="title">Пошук за назвою</option>
+                <option value="author">Пошук за автором</option>
+            </select>
+            <input type="text" id="search-input" placeholder="Введіть текст для пошуку...">
+            <select id="region-filter">
+                <option value="">Всі області</option>
+            </select>
+            <select id="department-filter">
+                <option value="">Всі відділення</option>
+            </select>
+            <div class="record-count-selector">
                 <select id="record-count">
                     <option value="10">10</option>
                     <option value="50">50</option>
@@ -25,6 +32,8 @@
                 </select>
                 <input type="number" id="custom-count" placeholder="Введіть кількість" style="display: none;">
             </div>
+        </div>
+        <div class="container">
             <div id="card-container" class="card-container">
                 <!-- Картки будуть завантажені тут -->
             </div>
@@ -48,6 +57,7 @@
     </script>
     <footer>
         <p>&copy; 2025 My Website</p>
+        <a href="convertjson/index1.html" class="button">Перейти до JSON конвертера</a>
     </footer>
     <script src="js/script.js"></script>
 </body>
