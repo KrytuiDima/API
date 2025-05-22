@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Перелік науково-дослідницьких робіт учнів-членів Малої академії наук України у 2024 році</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" id="theme-style">
 </head>
 <body>
-    <header>
+    <canvas id="smoke"></canvas>
+    <div id="toggle">Трейл: вимк.</div>
+
+    <header style="position: relative; z-index: 2;">
         <h1>Дані з JSON</h1>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <em id="theme-text">Темна</em>
+        </div>
     </header>
-    <main>
+    <main style="position: relative; z-index: 2;">
         <div class="filters">
             <select id="search-by">
                 <option value="title">Пошук за назвою</option>
@@ -39,7 +49,7 @@
             </div>
         </div>
     </main>
-    <script src="https://giscus.app/client.js"
+     <script src="https://giscus.app/client.js"
         data-repo="KrytuiDima/API"
         data-repo-id="R_kgDOOpvDvA"
         data-category="Ideas"
@@ -55,10 +65,10 @@
         crossorigin="anonymous"
         async>
     </script>
-    <footer>
+    <script src="js/script.js"></script>
+    <footer style="position: relative; z-index: 2;">
         <p>&copy; 2025 My Website</p>
         <a href="convertjson/index1.html" class="button">Перейти до JSON конвертера</a>
     </footer>
-    <script src="js/script.js"></script>
 </body>
 </html>

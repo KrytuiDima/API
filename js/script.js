@@ -37,6 +37,23 @@ fetch('js/jasu-data (1).json')
             }
         });
 
+        // Theme toggle functionality
+        const checkbox = document.getElementById('checkbox');
+        const themeStyle = document.getElementById('theme-style');
+        const themeText = document.getElementById('theme-text');
+
+        checkbox.addEventListener('change', () => {
+            if (checkbox.checked) {
+                themeStyle.href = 'css/darkstyle.css';
+                themeText.textContent = 'Світла';
+                isLightTheme = false;
+            } else {
+                themeStyle.href = 'css/style.css';
+                themeText.textContent = 'Темна';
+                isLightTheme = true;
+            }
+        });
+
         // Функція для відображення даних
         const displayData = (filteredData) => {
             cardContainer.innerHTML = '';
@@ -234,3 +251,90 @@ fetch('js/jasu-data (1).json')
         displayData(data.slice(0, 10)); // За замовчуванням 10 записів
     })
     .catch(error => console.error('Помилка завантаження даних:', error));
+
+// Smoke effect
+const canvas = document.getElementById("smoke");
+const ctx = canvas.getContext("2d");
+const toggle = document.getElementById("toggle");
+
+let width = canvas.width = window.innerWidth;
+let height = canvas.height = window.innerHeight;
+
+window.addEventListener("resize", () => {
+    width = canvas.width = window.innerWidth;
+    height = canvas.height = window.innerHeight;
+});
+
+const particles = [];
+let effectEnabled = false;
+let isLightTheme = true; // Track the current theme
+
+toggle.addEventListener("click", () => {
+    effectEnabled = !effectEnabled;
+    toggle.classList.toggle("active", effectEnabled);
+    toggle.textContent = "Трейл: " + (effectEnabled ? "увімк." : "вимк.");
+});
+
+function spawnParticles(x, y, amount, sizeMultiplier = 1) {
+    for (let i = 0; i < amount; i++) {
+        particles.push({
+            x,
+            y,
+            alpha: 0.1 + Math.random() * 0.1,
+            radius: (3 + Math.random() * 3) * sizeMultiplier,
+            dx: (Math.random() - 0.5) * 0.6 * sizeMultiplier,
+            dy: (Math.random() - 0.5) * 0.6 * sizeMultiplier,
+            life: 40
+        });
+    }
+}
+
+document.addEventListener("mousemove", (e) => {
+    if (effectEnabled) {
+        spawnParticles(e.clientX, e.clientY, 1);
+    }
+});
+
+document.addEventListener("mousedown", (e) => {
+    if (effectEnabled) {
+        spawnParticles(e.clientX, e.clientY, 10, 1.5);
+    }
+});
+
+function draw() {
+    ctx.clearRect(0, 0, width, height);
+
+    for (let i = 0; i < particles.length; i++) {
+        const p = particles[i];
+
+        ctx.beginPath();
+        // Use different colors based on the theme
+        if (isLightTheme) {
+            ctx.fillStyle = `rgba(100, 100, 150, ${p.alpha})`; // Darker color for light theme
+        } else {
+            ctx.fillStyle = `rgba(200, 200, 255, ${p.alpha})`;
+        }
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fill();
+
+        p.x += p.dx;
+        p.y += p.dy;
+        p.alpha *= 0.96;
+        p.life--;
+
+        if (p.life <= 0 || p.alpha <= 0.01) {
+            particles.splice(i, 1);
+            i--;
+        }
+    }
+
+    requestAnimationFrame(draw);
+}
+
+draw();
+
+// Listen for theme changes and update the smoke color
+const checkbox = document.getElementById('checkbox');
+checkbox.addEventListener('change', () => {
+    isLightTheme = !checkbox.checked; // Update the theme flag
+});

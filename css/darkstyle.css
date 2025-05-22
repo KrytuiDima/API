@@ -2,19 +2,19 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e6e6ff; /* Light lavender */
-    color: #333;
+    background-color: #1a1423; /* Dark cosmic purple */
+    color: #eee;
     line-height: 1.7;
     transition: background-color 0.3s, color 0.3s;
 }
 
 /* Header Styles */
 header {
-    background: linear-gradient(to right, #b388ff, #957dad); /* Soft purple gradient */
+    background: linear-gradient(to right, #4a148c, #311b92); /* Darker purple gradient */
     color: #fff;
     padding: 2rem 0;
     text-align: center;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
     border-radius: 1rem;
     margin-bottom: 2rem;
 }
@@ -38,7 +38,7 @@ main {
 
 /* Footer Styles */
 footer {
-    background: #5e35b1; /* Darker purple */
+    background: #0d0d0d; /* Very dark gray */
     color: #fff;
     text-align: center;
     padding: 1.5rem 0;
@@ -53,7 +53,7 @@ table {
     margin: 2rem 0;
     font-size: 1rem;
     text-align: left;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
     border-radius: 1rem;
     overflow: hidden;
 }
@@ -66,19 +66,19 @@ table td {
 }
 
 table th {
-    background-color: #7e57c2; /* Medium purple */
-    color: white;
+    background-color: #283593; /* Darker indigo */
+    color: #ddd;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
 }
 
 table tbody tr:nth-child(even) {
-    background-color: #f2e9ff; /* Lighter lavender */
+    background-color: #2c2633; /* Darker purple */
 }
 
 table tbody tr:hover {
-    background-color: #d1c4e9; /* Light purple */
+    background-color: #4527a0; /* Darker hover */
     transition: background-color 0.3s;
 }
 
@@ -94,7 +94,7 @@ table tbody tr:hover {
 
 .filters label {
     font-weight: 500;
-    color: #555;
+    color: #ddd;
 }
 
 .filters input,
@@ -102,17 +102,17 @@ table tbody tr:hover {
     padding: 0.75rem 1rem;
     font-size: 1rem;
     border-radius: 2rem;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    color: #333;
+    border: 1px solid #555;
+    background-color: #444;
+    color: #eee;
     outline: none;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .filters input:focus,
 .filters select:focus {
-    border-color: #7e57c2;
-    box-shadow: 0 0 0 0.2rem rgba(126, 87, 194, 0.25);
+    border-color: #673ab7; /* Darker purple */
+    box-shadow: 0 0 0 0.2rem rgba(103, 58, 183, 0.25);
 }
 
 /* Card Styles */
@@ -123,30 +123,30 @@ table tbody tr:hover {
 }
 
 .card {
-    background-color: #fff;
+    background-color: #332940; /* Dark purple */
     border-radius: 1rem;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
     padding: 1.5rem;
     transition: transform 0.3s, box-shadow 0.3s;
-    border: 1px solid #eee;
+    border: 1px solid #555;
 }
 
 .card:hover {
     transform: translateY(-0.25rem);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
 }
 
 .card h3 {
     margin: 0 0 1rem;
     font-size: 1.5rem;
-    color: #5e35b1;
+    color: #b39ddb; /* Lighter purple */
     font-weight: 600;
 }
 
 .card p {
     margin: 0.5rem 0;
     font-size: 1rem;
-    color: #555;
+    color: #ddd;
 }
 
 .card a {
@@ -156,13 +156,13 @@ table tbody tr:hover {
     text-decoration: none;
     border-radius: 2rem;
     padding: 0.75rem 1.5rem;
-    background: linear-gradient(to right, #957dad, #b388ff);
+    background: linear-gradient(to right, #5e35b1, #4a148c);
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
     border: none;
 }
 
 .card a:hover {
-    background: linear-gradient(to right, #b388ff, #957dad);
+    background: linear-gradient(to right, #4a148c, #5e35b1);
     transform: scale(1.05);
 }
 
@@ -170,7 +170,7 @@ table tbody tr:hover {
 .button {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background: linear-gradient(to right, #957dad, #b388ff);
+    background: linear-gradient(to right, #5e35b1, #4a148c);
     color: white;
     text-decoration: none;
     border-radius: 2rem;
@@ -181,7 +181,7 @@ table tbody tr:hover {
 }
 
 .button:hover {
-    background: linear-gradient(to right, #b388ff, #957dad);
+    background: linear-gradient(to right, #4a148c, #5e35b1);
     transform: scale(1.05);
 }
 
@@ -189,14 +189,14 @@ table tbody tr:hover {
 .description-container {
     margin-top: 1rem;
     padding: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid #555;
     border-radius: 1rem;
-    background-color: #f9f9f9;
-    color: #555;
+    background-color: #444;
+    color: #ddd;
 }
 
 .description-toggle {
-    background: linear-gradient(to right, #957dad, #b388ff);
+    background: linear-gradient(to right, #5e35b1, #4a148c);
     color: white;
     border: none;
     padding: 0.6rem 1rem;
@@ -207,7 +207,7 @@ table tbody tr:hover {
 }
 
 .description-toggle:hover {
-    background: linear-gradient(to right, #b388ff, #957dad);
+    background: linear-gradient(to right, #4a148c, #5e35b1);
     transform: scale(1.05);
 }
 
@@ -241,7 +241,7 @@ table tbody tr:hover {
 }
 
 .card-button {
-    background: linear-gradient(to right, #957dad, #b388ff);
+    background: linear-gradient(to right, #5e35b1, #4a148c);
     color: white;
     border: none;
     padding: 0.6rem 1rem;
@@ -255,38 +255,38 @@ table tbody tr:hover {
 }
 
 .card-button:hover {
-    background: linear-gradient(to right, #b388ff, #957dad);
+    background: linear-gradient(to right, #4a148c, #5e35b1);
     transform: scale(1.05);
 }
 
 /* Specific button styles */
 .show-image-button {
-    background: linear-gradient(to right, #957dad, #b388ff);
+    background: linear-gradient(to right, #5e35b1, #4a148c);
     color: white;
 }
 
 .show-image-button:hover {
-    background: linear-gradient(to right, #b388ff, #957dad);
+    background: linear-gradient(to right, #4a148c, #5e35b1);
     transform: scale(1.05);
 }
 
 .description-toggle {
-    background: linear-gradient(to right, #957dad, #b388ff);
+    background: linear-gradient(to right, #5e35b1, #4a148c);
     color: white;
 }
 
 .description-toggle:hover {
-    background: linear-gradient(to right, #b388ff, #957dad);
+    background: linear-gradient(to right, #4a148c, #5e35b1);
     transform: scale(1.05);
 }
 
 .results-button {
-    background: linear-gradient(to right, #957dad, #b388ff);
+    background: linear-gradient(to right, #5e35b1, #4a148c);
     color: white;
 }
 
 .results-button:hover {
-    background: linear-gradient(to right, #b388ff, #957dad);
+    background: linear-gradient(to right, #4a148c, #5e35b1);
     transform: scale(1.05);
 }
 
@@ -403,4 +403,3 @@ canvas {
     background: linear-gradient(to right, #b388ff, #957dad);
     color: #fff;
 }
-
