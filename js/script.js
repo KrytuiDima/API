@@ -161,13 +161,43 @@ fetch('js/jasu-data (1).json')
                         .catch(error => console.error('Помилка завантаження результатів:', error));
                 });
 
-                card.innerHTML = `
-                    <h3>${item.title}</h3>
-                    <p><strong>Школа:</strong> ${item.school}</p>
-                    <p><strong>Автор:</strong> ${item.author}</p>
-                    <p><strong>Відділення:</strong> ${item.department}</p>
-                    <p><strong>Область:</strong> ${item.region}</p>
-                `;
+                // Створення контейнерів для даних
+                const titleContainer = document.createElement('div');
+                titleContainer.style.height = '250px'; // Збільшена фіксована висота
+                titleContainer.style.width = '100%';
+                titleContainer.style.overflow = 'hidden'; // Приховати текст, що виходить за межі
+                titleContainer.innerHTML = `<h3>${item.title}</h3>`;
+
+                const schoolContainer = document.createElement('div');
+                schoolContainer.style.height = '150px'; // Фіксована висота
+                schoolContainer.style.width = '100%';
+                 schoolContainer.style.overflow = 'hidden'; // Приховати текст, що виходить за межі
+                schoolContainer.innerHTML = `<p><strong>Школа:</strong> ${item.school}</p>`;
+
+                const authorContainer = document.createElement('div');
+                authorContainer.style.height = '50px'; // Фіксована висота
+                authorContainer.style.width = '100%';
+                authorContainer.style.overflow = 'hidden'; // Приховати текст, що виходить за межі
+                authorContainer.innerHTML = `<p><strong>Автор:</strong> ${item.author}</p>`;
+
+                const departmentContainer = document.createElement('div');
+                departmentContainer.style.height = '50px'; // Фіксована висота
+                departmentContainer.style.width = '100%';
+                departmentContainer.style.overflow = 'hidden'; // Приховати текст, що виходить за межі
+                departmentContainer.innerHTML = `<p><strong>Відділення:</strong> ${item.department}</p>`;
+
+                const regionContainer = document.createElement('div');
+                regionContainer.style.height = '70px'; // Фіксована висота
+                regionContainer.style.width = '100%';
+                regionContainer.style.overflow = 'hidden'; // Приховати текст, що виходить за межі
+                regionContainer.innerHTML = `<p><strong>Область:</strong> ${item.region}</p>`;
+
+                // Додавання контейнерів до картки
+                card.appendChild(titleContainer);
+                card.appendChild(schoolContainer);
+                card.appendChild(authorContainer);
+                card.appendChild(departmentContainer);
+                card.appendChild(regionContainer);
 
                 // Create a container for the buttons
                 const cardButtons = document.createElement('div');
