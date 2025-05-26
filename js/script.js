@@ -41,6 +41,56 @@ fetch('js/jasu-data (1).json')
         const checkbox = document.getElementById('checkbox');
         const themeStyle = document.getElementById('theme-style');
         const themeText = document.getElementById('theme-text');
+        let isLightTheme = true; // Track the current theme
+        let selectedSource = 'json'; // Default image source
+
+        // Function to create the image source selector
+        function createImageSourceSelector() {
+            const selector = document.createElement('select');
+            selector.id = 'image-source-selector';
+
+            const jsonOption = document.createElement('option');
+            jsonOption.value = 'json';
+            jsonOption.textContent = 'JSON';
+
+            const folderOption = document.createElement('option');
+            folderOption.value = 'folder';
+            folderOption.textContent = 'Folder';
+
+            selector.appendChild(jsonOption);
+            selector.appendChild(folderOption);
+
+            selector.value = selectedSource; // Set initial value
+
+            selector.addEventListener('change', function() {
+                selectedSource = this.value;
+                displayData(data.slice(0, 10)); // Re-render cards
+            });
+
+            // Style the selector
+            selector.style.padding = '0.75rem 1rem';
+            selector.style.fontSize = '1rem';
+            selector.style.borderRadius = '2rem';
+            selector.style.border = '1px solid #ccc';
+            selector.style.backgroundColor = '#fff';
+            selector.style.color = '#333';
+            selector.style.outline = 'none';
+            selector.style.transition = 'border-color 0.3s, box-shadow 0.3s';
+            selector.style.margin = '0 0.5rem'; // Add some margin
+
+            // Add focus style
+            selector.addEventListener('focus', function() {
+                this.style.borderColor = '#7e57c2';
+                this.style.boxShadow = '0 0 0 0.2rem rgba(126, 87, 194, 0.25)';
+            });
+
+            return selector;
+        }
+
+        // Append the image source selector to the filters
+        const filtersContainer = document.querySelector('.filters');
+        const imageSourceSelector = createImageSourceSelector();
+        filtersContainer.appendChild(imageSourceSelector);
 
         checkbox.addEventListener('change', () => {
             if (checkbox.checked) {
@@ -61,12 +111,21 @@ fetch('js/jasu-data (1).json')
                 const card = document.createElement('div');
                 card.className = 'card';
 
+                let imageSrc = '';
+                if (selectedSource === 'json') {
+                    imageSrc ='https://jasu2025.eu/' + item.image;
+                } else if (selectedSource === 'folder') {
+                    // Assuming 'u' and 'x' are available in the item object
+                    const id = item.id; // Use the item's id
+                    imageSrc = item.image; // Construct the image path
+                }
+
                 // Create show image button
                 const showImageButton = document.createElement('button');
                 showImageButton.textContent = 'Показати зображення';
                 showImageButton.className = 'card-button show-image-button';
                 showImageButton.addEventListener('click', () => {
-                    modalImage.src = item.image;
+                    modalImage.src = imageSrc;
                     modal.style.display = 'flex';
                 });
 
@@ -191,6 +250,13 @@ fetch('js/jasu-data (1).json')
                 regionContainer.style.width = '100%';
                 regionContainer.style.overflow = 'hidden'; // Приховати текст, що виходить за межі
                 regionContainer.innerHTML = `<p><strong>Область:</strong> ${item.region}</p>`;
+
+                // Контейнер для місця
+                    const placeContainer = document.createElement('div');
+                    placeContainer.style.height = '70px';
+                    placeContainer.style.width = '100%';
+                    placeContainer.style.overflow = 'hidden';
+                    placeContainer.innerHTML = `<p><strong>Місце:</strong> ${item.place}</p>`;
 
                 // Додавання контейнерів до картки
                 card.appendChild(titleContainer);

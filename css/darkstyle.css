@@ -405,3 +405,28 @@ canvas {
     background: linear-gradient(to right, #b388ff, #957dad);
     color: #fff;
 }
+
+/* Image Source Selector Styles */
+#image-source-selector {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    border: 1px solid #555;
+    background-color: #444;
+    color: #eee;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    margin: 0 0.5rem;
+    cursor: pointer; /* Add a cursor to indicate it's interactive */
+}
+
+#image-source-selector:focus {
+    border-color: #673ab7; /* Darker purple */
+    box-shadow: 0 0 0 0.2rem rgba(103, 58, 183, 0.25);
+}
+
+#image-source-selector option {
+    /* Style the options if needed */
+    background-color: #444;
+    color: #eee;
+}
