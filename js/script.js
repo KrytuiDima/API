@@ -1,13 +1,19 @@
 fetch('js/jasu-data (1).json')
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
     .then(data => {
         const cardContainer = document.querySelector('#card-container');
         const regionFilter = document.querySelector('#region-filter');
         const searchInput = document.querySelector('#search-input');
         const recordCountSelect = document.querySelector('#record-count');
         const customCountInput = document.querySelector('#custom-count');
-        const searchBySelect = document.querySelector('#search-by'); // Get the search-by select element
+        const searchBySelect = document.querySelector('#search-by');
         const departmentFilter = document.querySelector('#department-filter');
+        const filtersContainer = document.querySelector('.filters');
 
         // Create modal structure
         const modal = document.createElement('div');
@@ -41,8 +47,8 @@ fetch('js/jasu-data (1).json')
         const checkbox = document.getElementById('checkbox');
         const themeStyle = document.getElementById('theme-style');
         const themeText = document.getElementById('theme-text');
-        let isLightTheme = true; // Track the current theme
-        let selectedSource = 'json'; // Default image source
+        let isLightTheme = true;
+        let selectedSource = 'json';
 
         // Function to create the image source selector
         function createImageSourceSelector() {
@@ -60,14 +66,13 @@ fetch('js/jasu-data (1).json')
             selector.appendChild(jsonOption);
             selector.appendChild(folderOption);
 
-            selector.value = selectedSource; // Set initial value
+            selector.value = selectedSource;
 
             selector.addEventListener('change', function() {
                 selectedSource = this.value;
-                displayData(data.slice(0, 10)); // Re-render cards
+                displayData(data.slice(0, 10));
             });
 
-            // Style the selector
             selector.style.padding = '0.75rem 1rem';
             selector.style.fontSize = '1rem';
             selector.style.borderRadius = '2rem';
@@ -76,9 +81,8 @@ fetch('js/jasu-data (1).json')
             selector.style.color = '#333';
             selector.style.outline = 'none';
             selector.style.transition = 'border-color 0.3s, box-shadow 0.3s';
-            selector.style.margin = '0 0.5rem'; // Add some margin
+            selector.style.margin = '0 0.5rem';
 
-            // Add focus style
             selector.addEventListener('focus', function() {
                 this.style.borderColor = '#7e57c2';
                 this.style.boxShadow = '0 0 0 0.2rem rgba(126, 87, 194, 0.25)';
@@ -87,10 +91,34 @@ fetch('js/jasu-data (1).json')
             return selector;
         }
 
-        // Append the image source selector to the filters
-        const filtersContainer = document.querySelector('.filters');
         const imageSourceSelector = createImageSourceSelector();
         filtersContainer.appendChild(imageSourceSelector);
+
+        // Place filter
+        const placeFilter = document.createElement('select');
+        placeFilter.id = 'place-filter';
+
+        const allPlacesOption = document.createElement('option');
+        allPlacesOption.value = '';
+        allPlacesOption.textContent = 'Всі місця';
+        placeFilter.appendChild(allPlacesOption);
+
+        const firstPlaceOption = document.createElement('option');
+        firstPlaceOption.value = 'I';
+        firstPlaceOption.textContent = 'I місце';
+        placeFilter.appendChild(firstPlaceOption);
+
+        const secondPlaceOption = document.createElement('option');
+        secondPlaceOption.value = 'II';
+        secondPlaceOption.textContent = 'II місце';
+        placeFilter.appendChild(secondPlaceOption);
+
+        const thirdPlaceOption = document.createElement('option');
+        thirdPlaceOption.value = 'III';
+        thirdPlaceOption.textContent = 'III місце';
+        placeFilter.appendChild(thirdPlaceOption);
+
+        filtersContainer.appendChild(placeFilter);
 
         checkbox.addEventListener('change', () => {
             if (checkbox.checked) {
@@ -104,8 +132,8 @@ fetch('js/jasu-data (1).json')
             }
         });
 
-        // Функція для відображення даних
         const displayData = (filteredData) => {
+            console.log('Filtered Data:', filteredData);
             cardContainer.innerHTML = '';
             filteredData.forEach(item => {
                 const card = document.createElement('div');
@@ -113,34 +141,33 @@ fetch('js/jasu-data (1).json')
 
                 let imageSrc = '';
                 if (selectedSource === 'json') {
-                    imageSrc ='https://jasu2025.eu/' + item.image;
+                    imageSrc = 'https://jasu2025.eu/' + item.image;
                 } else if (selectedSource === 'folder') {
-                    // Assuming 'u' and 'x' are available in the item object
-                    const id = item.id; // Use the item's id
-                    imageSrc = item.image; // Construct the image path
+                    const id = item.id;
+                    imageSrc = item.image;
                 }
 
-                // Create show image button
-                const showImageButton = document.createElement('button');
-                showImageButton.textContent = 'Показати зображення';
-                showImageButton.className = 'card-button show-image-button';
-                showImageButton.addEventListener('click', () => {
+                const thumbnailButton = document.createElement('img');
+                thumbnailButton.src = imageSrc;
+                thumbnailButton.className = 'card-thumbnail';
+                thumbnailButton.style.width = '50px';
+                thumbnailButton.style.height = '50px';
+                thumbnailButton.style.borderRadius = '5px';
+                thumbnailButton.style.cursor = 'pointer';
+                thumbnailButton.addEventListener('click', () => {
                     modalImage.src = imageSrc;
                     modal.style.display = 'flex';
                 });
 
-                // Create the description container and initially hide it
                 const descriptionContainer = document.createElement('div');
                 descriptionContainer.className = 'description-container';
                 descriptionContainer.innerHTML = `<p>${item.description}</p>`;
-                descriptionContainer.style.display = 'none'; // Hide initially
+                descriptionContainer.style.display = 'none';
 
-                // Create the toggle button
                 const toggleButton = document.createElement('button');
                 toggleButton.textContent = 'Розгорнути опис';
                 toggleButton.className = 'card-button description-toggle';
 
-                // Add event listener to the button
                 toggleButton.addEventListener('click', () => {
                     if (descriptionContainer.style.display === 'none') {
                         descriptionContainer.style.display = 'block';
@@ -151,7 +178,6 @@ fetch('js/jasu-data (1).json')
                     }
                 });
 
-                // Create results button
                 const resultsButton = document.createElement('button');
                 resultsButton.textContent = 'Показати результати';
                 resultsButton.className = 'card-button results-button';
@@ -162,7 +188,6 @@ fetch('js/jasu-data (1).json')
                             const participantResult = resultsData.find(result => result.name === item.author);
 
                             if (participantResult) {
-                                // Create a new modal for results
                                 const resultsModal = document.createElement('div');
                                 resultsModal.id = 'resultsModal';
                                 resultsModal.style.display = 'none';
@@ -172,7 +197,7 @@ fetch('js/jasu-data (1).json')
                                 resultsModal.style.width = '100%';
                                 resultsModal.style.height = '100%';
                                 resultsModal.style.backgroundColor = 'rgba(0,0,0,0.8)';
-                                resultsModal.style.zIndex = '1001'; // Higher than imageModal
+                                resultsModal.style.zIndex = '1001';
                                 resultsModal.style.justifyContent = 'center';
                                 resultsModal.style.alignItems = 'center';
                                 resultsModal.style.overflow = 'auto';
@@ -220,66 +245,80 @@ fetch('js/jasu-data (1).json')
                         .catch(error => console.error('Помилка завантаження результатів:', error));
                 });
 
-                // Створення контейнерів для даних
                 const titleContainer = document.createElement('div');
-                titleContainer.style.height = '250px'; // Збільшена фіксована висота
+                titleContainer.style.height = '250px';
                 titleContainer.style.width = '100%';
-                titleContainer.style.overflow = 'hidden'; // Приховати текст, що виходить за межі
+                titleContainer.style.overflow = 'hidden';
                 titleContainer.innerHTML = `<h3>${item.title}</h3>`;
 
                 const schoolContainer = document.createElement('div');
-                schoolContainer.style.height = '150px'; // Фіксована висота
+                schoolContainer.style.height = '150px';
                 schoolContainer.style.width = '100%';
-                 schoolContainer.style.overflow = 'hidden'; // Приховати текст, що виходить за межі
+                schoolContainer.style.overflow = 'hidden';
                 schoolContainer.innerHTML = `<p><strong>Школа:</strong> ${item.school}</p>`;
 
                 const authorContainer = document.createElement('div');
-                authorContainer.style.height = '50px'; // Фіксована висота
+                authorContainer.style.height = '50px';
                 authorContainer.style.width = '100%';
-                authorContainer.style.overflow = 'hidden'; // Приховати текст, що виходить за межі
+                authorContainer.style.overflow = 'hidden';
                 authorContainer.innerHTML = `<p><strong>Автор:</strong> ${item.author}</p>`;
 
                 const departmentContainer = document.createElement('div');
-                departmentContainer.style.height = '50px'; // Фіксована висота
+                departmentContainer.style.height = '50px';
                 departmentContainer.style.width = '100%';
-                departmentContainer.style.overflow = 'hidden'; // Приховати текст, що виходить за межі
+                departmentContainer.style.overflow = 'hidden';
                 departmentContainer.innerHTML = `<p><strong>Відділення:</strong> ${item.department}</p>`;
 
                 const regionContainer = document.createElement('div');
-                regionContainer.style.height = '70px'; // Фіксована висота
+                regionContainer.style.height = '70px';
                 regionContainer.style.width = '100%';
-                regionContainer.style.overflow = 'hidden'; // Приховати текст, що виходить за межі
+                regionContainer.style.overflow = 'hidden';
                 regionContainer.innerHTML = `<p><strong>Область:</strong> ${item.region}</p>`;
 
-                // Контейнер для місця
-                    const placeContainer = document.createElement('div');
-                    placeContainer.style.height = '70px';
-                    placeContainer.style.width = '100%';
-                    placeContainer.style.overflow = 'hidden';
-                    placeContainer.innerHTML = `<p><strong>Місце:</strong> ${item.place}</p>`;
+                const placeContainer = document.createElement('div');
+                placeContainer.style.height = '70px';
+                placeContainer.style.width = '100%';
+                placeContainer.style.overflow = 'hidden';
+                placeContainer.innerHTML = `<p><strong>Місце:</strong> Завантаження...</p>`;
 
-                // Додавання контейнерів до картки
                 card.appendChild(titleContainer);
                 card.appendChild(schoolContainer);
                 card.appendChild(authorContainer);
                 card.appendChild(departmentContainer);
                 card.appendChild(regionContainer);
+                card.appendChild(placeContainer);
 
-                // Create a container for the buttons
                 const cardButtons = document.createElement('div');
                 cardButtons.className = 'card-buttons';
 
-                cardButtons.appendChild(showImageButton);
                 cardButtons.appendChild(toggleButton);
                 cardButtons.appendChild(resultsButton);
 
+                const thumbnailContainer = document.createElement('div');
+                thumbnailContainer.appendChild(thumbnailButton);
+                cardButtons.appendChild(thumbnailContainer);
+
                 card.appendChild(cardButtons);
-                card.appendChild(descriptionContainer); // Add the description container to the card
+                card.appendChild(descriptionContainer);
                 cardContainer.appendChild(card);
+
+                fetch('js/resolt.json')
+                    .then(response => response.json())
+                    .then(resultsData => {
+                        const participantResult = resultsData.find(result => result.name === item.author);
+                        if (participantResult) {
+                            placeContainer.innerHTML = `<p><strong>Місце:</strong> ${participantResult.place || 'Інформація відсутня'}</p>`;
+                        } else {
+                            placeContainer.innerHTML = `<p><strong>Місце:</strong> Інформація відсутня</p>`;
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error loading results:', error);
+                        placeContainer.innerHTML = `<p><strong>Місце:</strong> Помилка завантаження</p>`;
+                    });
             });
         };
 
-        // Ініціалізація фільтра областей
         const regions = [...new Set(data.map(item => item.region))];
         regions.forEach(region => {
             const option = document.createElement('option');
@@ -288,22 +327,21 @@ fetch('js/jasu-data (1).json')
             regionFilter.appendChild(option);
         });
 
-         // Ініціалізація фільтра відділень
-         const departments = [...new Set(data.map(item => item.department))];
-         departments.forEach(department => {
-             const option = document.createElement('option');
-             option.value = department;
-             option.textContent = department;
-             departmentFilter.appendChild(option);
-         });
+        const departments = [...new Set(data.map(item => item.department))];
+        departments.forEach(department => {
+            const option = document.createElement('option');
+            option.value = department;
+            option.textContent = department;
+            departmentFilter.appendChild(option);
+        });
 
-        // Фільтрація та пошук
         const filterData = () => {
             const searchText = searchInput.value.toLowerCase();
             const selectedRegion = regionFilter.value;
             let recordCount = recordCountSelect.value;
-            const searchBy = searchBySelect.value; // Get the selected search criteria
+            const searchBy = searchBySelect.value;
             const selectedDepartment = departmentFilter.value;
+            const selectedPlace = placeFilter.value;
 
             if (recordCount === 'custom') {
                 recordCount = parseInt(customCountInput.value) || data.length;
@@ -311,24 +349,41 @@ fetch('js/jasu-data (1).json')
                 recordCount = parseInt(recordCount);
             }
 
-            const filteredData = data
-                .filter(item => {
-                    let matchesSearch = false;
-                    if (searchBy === 'title') {
-                        matchesSearch = item.title.toLowerCase().includes(searchText);
-                    } else if (searchBy === 'author') {
-                        matchesSearch = item.author.toLowerCase().includes(searchText);
-                    }
-                    const matchesRegion = selectedRegion ? item.region === selectedRegion : true;
-                    const matchesDepartment = selectedDepartment ? item.department === selectedDepartment : true;
-                    return matchesSearch && matchesRegion && matchesDepartment;
-                })
-                .slice(0, recordCount);
+            const filteredData = data.filter(item => {
+                let matchesSearch = false;
+                if (searchBy === 'title') {
+                    matchesSearch = item.title.toLowerCase().includes(searchText);
+                } else if (searchBy === 'author') {
+                    matchesSearch = item.author.toLowerCase().includes(searchText);
+                } else if (searchBy === 'school') {
+                    matchesSearch = item.school.toLowerCase().includes(searchText);
+                } else {
+                    matchesSearch = true;
+                }
 
+                const matchesRegion = selectedRegion ? item.region === selectedRegion : true;
+                const matchesDepartment = selectedDepartment ? item.department === selectedDepartment : true;
+
+                let participantResult;
+                fetch('js/resolt.json')
+                    .then(response => response.json())
+                    .then(resultsData => {
+                        participantResult = resultsData.find(result => result.name === item.author);
+                    })
+                    .catch(error => console.error('Error loading results:', error));
+
+                let matchesPlace = true;
+                if (selectedPlace) {
+                    matchesPlace = participantResult && participantResult.place === selectedPlace;
+                }
+
+                return matchesSearch && matchesRegion && matchesDepartment && matchesPlace;
+            });
+
+            console.log('Filtered Data before displayData:', filteredData);
             displayData(filteredData);
         };
 
-        // Додати обробники подій
         searchInput.addEventListener('input', filterData);
         regionFilter.addEventListener('change', filterData);
         recordCountSelect.addEventListener('change', () => {
@@ -340,11 +395,24 @@ fetch('js/jasu-data (1).json')
             }
         });
         customCountInput.addEventListener('input', filterData);
-        searchBySelect.addEventListener('change', filterData); // Add event listener for search-by select
+        searchBySelect.addEventListener('change', () => {
+            const searchText = searchInput.value.toLowerCase();
+            if (searchBySelect.value === 'school') {
+            }
+            filterData();
+        });
         departmentFilter.addEventListener('change', filterData);
+        placeFilter.addEventListener('change', filterData);
 
-        // Відобразити всі дані спочатку
-        displayData(data.slice(0, 10)); // За замовчуванням 10 записів
+        const searchByOptions = ['school'];
+        searchByOptions.forEach(option => {
+            const optionElement = document.createElement('option');
+            optionElement.value = option;
+            optionElement.textContent = 'Пошук за школою';
+            searchBySelect.appendChild(optionElement);
+        });
+
+        displayData(data.slice(0, 10));
     })
     .catch(error => console.error('Помилка завантаження даних:', error));
 
@@ -363,7 +431,7 @@ window.addEventListener("resize", () => {
 
 const particles = [];
 let effectEnabled = false;
-let isLightTheme = true; // Track the current theme
+let isLightTheme = true;
 
 toggle.addEventListener("click", () => {
     effectEnabled = !effectEnabled;
@@ -404,9 +472,8 @@ function draw() {
         const p = particles[i];
 
         ctx.beginPath();
-        // Use different colors based on the theme
         if (isLightTheme) {
-            ctx.fillStyle = `rgba(100, 100, 150, ${p.alpha})`; // Darker color for light theme
+            ctx.fillStyle = `rgba(100, 100, 150, ${p.alpha})`;
         } else {
             ctx.fillStyle = `rgba(200, 200, 255, ${p.alpha})`;
         }
@@ -429,8 +496,7 @@ function draw() {
 
 draw();
 
-// Listen for theme changes and update the smoke color
 const checkbox = document.getElementById('checkbox');
 checkbox.addEventListener('change', () => {
-    isLightTheme = !checkbox.checked; // Update the theme flag
+    isLightTheme = !checkbox.checked;
 });

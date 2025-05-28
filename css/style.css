@@ -235,60 +235,42 @@ table tbody tr:hover {
 /* Card Buttons */
 .card-buttons {
     display: flex;
-    gap: 0.75rem;
-    margin-top: 1.25rem;
-    justify-content: flex-start;
-    margin-left: -10px; /* Adjust the value as needed */
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    align-items: flex-start; /* Align items to the start */
+}
+
+/* Style for button containers */
+.card-buttons > div {
+    width: 100%; /* Make each container take full width */
 }
 
 .card-button {
-    background: linear-gradient(to right, #957dad, #b388ff);
-    color: white;
+    padding: 0.5rem 1rem;
     border: none;
-    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #f0f0f0;
+    color: #333;
     cursor: pointer;
-    border-radius: 2rem;
-    font-size: 0.9rem;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 0.3s ease;
+    width: 100%;
     text-align: center;
-    flex: 1;
-    box-sizing: border-box;
 }
 
 .card-button:hover {
-    background: linear-gradient(to right, #b388ff, #957dad);
-    transform: scale(1.05);
+    background-color: #ddd;
 }
 
-/* Specific button styles */
-.show-image-button {
-    background: linear-gradient(to right, #957dad, #b388ff);
-    color: white;
+/* Style for the thumbnail */
+.card-thumbnail {
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
 }
 
-.show-image-button:hover {
-    background: linear-gradient(to right, #b388ff, #957dad);
-    transform: scale(1.05);
-}
-
-.description-toggle {
-    background: linear-gradient(to right, #957dad, #b388ff);
-    color: white;
-}
-
-.description-toggle:hover {
-    background: linear-gradient(to right, #b388ff, #957dad);
-    transform: scale(1.05);
-}
-
-.results-button {
-    background: linear-gradient(to right, #957dad, #b388ff);
-    color: white;
-}
-
-.results-button:hover {
-    background: linear-gradient(to right, #b388ff, #957dad);
-    transform: scale(1.05);
+.card-thumbnail:hover {
+    transform: scale(1.1); /* Scale up on hover */
 }
 
 /* Record Count Selector */
