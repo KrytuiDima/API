@@ -1,0 +1,1841 @@
+[
+  {
+    "number": 1,
+    "name": "Погинець Софія Андріївна",
+    "region": "Волинська",
+    "grade": "11",
+    "course": "19,60",
+    "scores": {
+      "remote": 5,
+      "remote_rank": null,
+      "poster": 7,
+      "poster_rank": null,
+      "conference": 9,
+      "conference_rank": null
+    },
+    "total": 8,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 2,
+    "name": "Журба Ростислав Сергійович",
+    "region": "Дніпропетровська",
+    "grade": "10",
+    "course": "18,90",
+    "scores": {
+      "remote": 15,
+      "remote_rank": null,
+      "poster": 12,
+      "poster_rank": null,
+      "conference": 17,
+      "conference_rank": null
+    },
+    "total": 15,
+    "place": ""
+  },
+  {
+    "number": 3,
+    "name": "Басараб Богдан Юрійович",
+    "region": "Донецька",
+    "grade": "10",
+    "course": "19,10",
+    "scores": {
+      "remote": 14,
+      "remote_rank": null,
+      "poster": 8,
+      "poster_rank": null,
+      "conference": 6,
+      "conference_rank": null
+    },
+    "total": 7,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 4,
+    "name": "Чижевський Володимир Володимирович",
+    "region": "Житомирська",
+    "grade": "10",
+    "course": "18,70",
+    "scores": {
+      "remote": 17,
+      "remote_rank": null,
+      "poster": 18,
+      "poster_rank": null,
+      "conference": 20,
+      "conference_rank": null
+    },
+    "total": 20,
+    "place": ""
+  },
+  {
+    "number": 5,
+    "name": "Ларіна Анастасія Олександрівна",
+    "region": "Закарпатська",
+    "grade": "11",
+    "course": "19,70",
+    "scores": {
+      "remote": 2,
+      "remote_rank": null,
+      "poster": 14,
+      "poster_rank": null,
+      "conference": 12,
+      "conference_rank": null
+    },
+    "total": 11,
+    "place": ""
+  },
+  {
+    "number": 6,
+    "name": "Лисенко Анна Іванівна",
+    "region": "Запорізька",
+    "grade": "11",
+    "course": "19,70",
+    "scores": {
+      "remote": 2,
+      "remote_rank": null,
+      "poster": 11,
+      "poster_rank": null,
+      "conference": 15,
+      "conference_rank": null
+    },
+    "total": 12,
+    "place": ""
+  },
+  {
+    "number": 7,
+    "name": "Досин Андрій Володимирович",
+    "region": "Івано-Франківська",
+    "grade": "11",
+    "course": "19,60",
+    "scores": {
+      "remote": 5,
+      "remote_rank": null,
+      "poster": 1,
+      "poster_rank": null,
+      "conference": 2,
+      "conference_rank": null
+    },
+    "total": 1,
+    "overall_rank": "І",
+    "place": ""
+  },
+  {
+    "number": 8,
+    "name": "Манько Ілля Романович",
+    "region": "Кіровоградська",
+    "grade": "11",
+    "course": "19,70",
+    "scores": {
+      "remote": 2,
+      "remote_rank": null,
+      "poster": 17,
+      "poster_rank": null,
+      "conference": 15,
+      "conference_rank": null
+    },
+    "total": 14,
+    "place": ""
+  },
+  {
+    "number": 9,
+    "name": "Вовчанський Олег Миколайович",
+    "region": "Львівська",
+    "grade": "ІІ",
+    "course": "18,40",
+    "scores": {
+      "remote": 20,
+      "remote_rank": null,
+      "poster": 16,
+      "poster_rank": null,
+      "conference": 13,
+      "conference_rank": null
+    },
+    "total": 17,
+    "place": ""
+  },
+  {
+    "number": 10,
+    "name": "Фасоля Михайло Вадимович",
+    "region": "Одеська",
+    "grade": "8",
+    "course": "18,50",
+    "scores": {
+      "remote": 19,
+      "remote_rank": null,
+      "poster": 13,
+      "poster_rank": null,
+      "conference": 11,
+      "conference_rank": null
+    },
+    "total": 13,
+    "place": ""
+  },
+  {
+    "number": 11,
+    "name": "Лоза Максим Вадимович",
+    "region": "Полтавська",
+    "grade": "9",
+    "course": "19,30",
+    "scores": {
+      "remote": 10,
+      "remote_rank": null,
+      "poster": 8,
+      "poster_rank": null,
+      "conference": 5,
+      "conference_rank": null
+    },
+    "total": 6,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 12,
+    "name": "Муха Володимир Олександрович",
+    "region": "Рівненська",
+    "grade": "10",
+    "course": "19,20",
+    "scores": {
+      "remote": 11,
+      "remote_rank": null,
+      "poster": 6,
+      "poster_rank": null,
+      "conference": 10,
+      "conference_rank": null
+    },
+    "total": 9,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 13,
+    "name": "Третяк Дарина Андріївна",
+    "region": "Сумська",
+    "grade": "10",
+    "course": "19,20",
+    "scores": {
+      "remote": 11,
+      "remote_rank": null,
+      "poster": 15,
+      "poster_rank": null,
+      "conference": 18,
+      "conference_rank": null
+    },
+    "total": 16,
+    "place": ""
+  },
+  {
+    "number": 14,
+    "name": "Гарвасюк Андрій Віталійович",
+    "region": "Тернопільська",
+    "grade": "11",
+    "course": "19,60",
+    "scores": {
+      "remote": 5,
+      "remote_rank": null,
+      "poster": 10,
+      "poster_rank": null,
+      "conference": 7,
+      "conference_rank": null
+    },
+    "total": 10,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 15,
+    "name": "Вайнштейн Артем Олегович",
+    "region": "Харківська",
+    "grade": "11",
+    "course": "18,90",
+    "scores": {
+      "remote": 15,
+      "remote_rank": null,
+      "poster": 5,
+      "poster_rank": null,
+      "conference": 8,
+      "conference_rank": null
+    },
+    "total": 5,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 16,
+    "name": "Чекотун Аріна Артурівна",
+    "region": "Херсонська",
+    "grade": "11",
+    "course": "19,20",
+    "scores": {
+      "remote": 11,
+      "remote_rank": null,
+      "poster": 3,
+      "poster_rank": null,
+      "conference": 3,
+      "conference_rank": null
+    },
+    "total": 4,
+    "overall_rank": "ІІ",
+    "place": ""
+  },
+  {
+    "number": 17,
+    "name": "Заганяч Софі Миколаївна",
+    "region": "Хмельницька",
+    "grade": "9",
+    "course": "18,70",
+    "scores": {
+      "remote": 17,
+      "remote_rank": null,
+      "poster": 18,
+      "poster_rank": null,
+      "conference": 14,
+      "conference_rank": null
+    },
+    "total": 19,
+    "place": ""
+  },
+  {
+    "number": 18,
+    "name": "Науменко Анастасія Олександрівна",
+    "region": "Черкаська",
+    "grade": "11",
+    "course": "19,30",
+    "scores": {
+      "remote": 9,
+      "remote_rank": null,
+      "poster": 20,
+      "poster_rank": null,
+      "conference": 18,
+      "conference_rank": null
+    },
+    "total": 18,
+    "place": ""
+  },
+  {
+    "number": 19,
+    "name": "Щербаков Артем Олексійович",
+    "region": "Чернігівська",
+    "grade": "11",
+    "course": "19,60",
+    "scores": {
+      "remote": 5,
+      "remote_rank": null,
+      "poster": 4,
+      "poster_rank": null,
+      "conference": 1,
+      "conference_rank": null
+    },
+    "total": 3,
+    "overall_rank": "ІІ",
+    "place": ""
+  },
+  {
+    "number": 20,
+    "name": "Височинський Тимофій Олексійович",
+    "region": "м.",
+    "grade": "Київ",
+    "course": "10",
+    "scores": {
+      "remote": null,
+      "remote_rank": 1,
+      "poster": null,
+      "poster_rank": 2,
+      "conference": null,
+      "conference_rank": 3
+    },
+    "total": null,
+    "overall_rank": "2",
+    "place": "ІІ"
+  },
+  {
+    "number": 1,
+    "name": "Королюк Соломія Сергіївна",
+    "region": "Волинська",
+    "grade": "10",
+    "course": "16,10",
+    "scores": {
+      "remote": 3,
+      "remote_rank": null,
+      "poster": 4,
+      "poster_rank": null,
+      "conference": 5,
+      "conference_rank": null
+    },
+    "total": 2,
+    "overall_rank": "ІІ",
+    "place": ""
+  },
+  {
+    "number": 2,
+    "name": "Тимченко Дмитро Олександрович",
+    "region": "Дніпропетровська",
+    "grade": "10",
+    "course": "16,10",
+    "scores": {
+      "remote": 3,
+      "remote_rank": null,
+      "poster": 14,
+      "poster_rank": null,
+      "conference": 1,
+      "conference_rank": null
+    },
+    "total": 8,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 3,
+    "name": "Чопик Владислав Ростиславович",
+    "region": "Закарпатська",
+    "grade": "10",
+    "course": "15,30",
+    "scores": {
+      "remote": 6,
+      "remote_rank": null,
+      "poster": 14,
+      "poster_rank": null,
+      "conference": 8,
+      "conference_rank": null
+    },
+    "total": 13,
+    "place": ""
+  },
+  {
+    "number": 4,
+    "name": "Маринич Платон Володимирович",
+    "region": "Запорізька",
+    "grade": "10",
+    "course": "15,30",
+    "scores": {
+      "remote": 6,
+      "remote_rank": null,
+      "poster": 7,
+      "poster_rank": null,
+      "conference": 12,
+      "conference_rank": null
+    },
+    "total": 12,
+    "place": ""
+  },
+  {
+    "number": 5,
+    "name": "Щипка Марія Дмитрівна",
+    "region": "Івано-Франківська",
+    "grade": "11",
+    "course": "15,30",
+    "scores": {
+      "remote": 6,
+      "remote_rank": null,
+      "poster": 8,
+      "poster_rank": null,
+      "conference": 1,
+      "conference_rank": null
+    },
+    "total": 6,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 6,
+    "name": "Хоменко Дмитро Вікторович",
+    "region": "Кіровоградська",
+    "grade": "9",
+    "course": "15,20",
+    "scores": {
+      "remote": 11,
+      "remote_rank": null,
+      "poster": 8,
+      "poster_rank": null,
+      "conference": 1,
+      "conference_rank": null
+    },
+    "total": 7,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 7,
+    "name": "Глушик Михайло Тарасович",
+    "region": "Львівська",
+    "grade": "10",
+    "course": "16,80",
+    "scores": {
+      "remote": 1,
+      "remote_rank": null,
+      "poster": 1,
+      "poster_rank": null,
+      "conference": 9,
+      "conference_rank": null
+    },
+    "total": 1,
+    "overall_rank": "ІІ",
+    "place": ""
+  },
+  {
+    "number": 8,
+    "name": "Сидоренко Роман Олександрович",
+    "region": "Миколаївська",
+    "grade": "11",
+    "course": "14,10",
+    "scores": {
+      "remote": 14,
+      "remote_rank": null,
+      "poster": 12,
+      "poster_rank": null,
+      "conference": 15,
+      "conference_rank": null
+    },
+    "total": 15,
+    "place": ""
+  },
+  {
+    "number": 9,
+    "name": "Лакаров Анатолій Андрійович",
+    "region": "Одеська",
+    "grade": "11",
+    "course": "15,30",
+    "scores": {
+      "remote": 6,
+      "remote_rank": null,
+      "poster": 2,
+      "poster_rank": null,
+      "conference": 14,
+      "conference_rank": null
+    },
+    "total": 11,
+    "place": ""
+  },
+  {
+    "number": 10,
+    "name": "Драгомарецький Максим Олегович",
+    "region": "Полтавська",
+    "grade": "11",
+    "course": "15,30",
+    "scores": {
+      "remote": 6,
+      "remote_rank": null,
+      "poster": 8,
+      "poster_rank": null,
+      "conference": 10,
+      "conference_rank": null
+    },
+    "total": 10,
+    "place": ""
+  },
+  {
+    "number": 11,
+    "name": "Ліщинський Данило Костянтинович",
+    "region": "Рівненська",
+    "grade": "10",
+    "course": "15,20",
+    "scores": {
+      "remote": 11,
+      "remote_rank": null,
+      "poster": 5,
+      "poster_rank": null,
+      "conference": 11,
+      "conference_rank": null
+    },
+    "total": 9,
+    "place": ""
+  },
+  {
+    "number": 12,
+    "name": "Ковбаса Богдан Романович",
+    "region": "Сумська",
+    "grade": "8",
+    "course": "14,10",
+    "scores": {
+      "remote": 14,
+      "remote_rank": null,
+      "poster": 12,
+      "poster_rank": null,
+      "conference": 13,
+      "conference_rank": null
+    },
+    "total": 14,
+    "place": ""
+  },
+  {
+    "number": 13,
+    "name": "Нікітін Роман Микитович",
+    "region": "Харківська",
+    "grade": "10",
+    "course": "14,90",
+    "scores": {
+      "remote": 13,
+      "remote_rank": null,
+      "poster": 2,
+      "poster_rank": null,
+      "conference": 6,
+      "conference_rank": null
+    },
+    "total": 4,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 14,
+    "name": "Віннічук Роман Михайлович",
+    "region": "Хмельницька",
+    "grade": "11",
+    "course": "16,40",
+    "scores": {
+      "remote": 2,
+      "remote_rank": null,
+      "poster": 8,
+      "poster_rank": null,
+      "conference": 1,
+      "conference_rank": null
+    },
+    "total": 3,
+    "overall_rank": "ІІ",
+    "place": ""
+  },
+  {
+    "number": 15,
+    "name": "Величко Гліб Дмитрович",
+    "region": "м.",
+    "grade": "Київ",
+    "course": "8",
+    "scores": {
+      "remote": null,
+      "remote_rank": 5,
+      "poster": null,
+      "poster_rank": 5,
+      "conference": null,
+      "conference_rank": 6
+    },
+    "total": null,
+    "overall_rank": "5",
+    "place": "ІІІ"
+  },
+  {
+    "number": 1,
+    "name": "Вовк Данило Сергійович",
+    "region": "Волинська",
+    "grade": "9",
+    "course": "14,70",
+    "scores": {
+      "remote": 13,
+      "remote_rank": null,
+      "poster": 8,
+      "poster_rank": null,
+      "conference": 7,
+      "conference_rank": null
+    },
+    "total": 7,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 2,
+    "name": "Хорольський Іван Юрійович",
+    "region": "Дніпропетровська",
+    "grade": "10",
+    "course": "17,10",
+    "scores": {
+      "remote": 1,
+      "remote_rank": null,
+      "poster": 5,
+      "poster_rank": null,
+      "conference": 5,
+      "conference_rank": null
+    },
+    "total": 5,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 3,
+    "name": "Литвин Нікіта Олександрович",
+    "region": "Донецька",
+    "grade": "8",
+    "course": "15,50",
+    "scores": {
+      "remote": 8,
+      "remote_rank": null,
+      "poster": 3,
+      "poster_rank": null,
+      "conference": 4,
+      "conference_rank": null
+    },
+    "total": 3,
+    "overall_rank": "ІІ",
+    "place": ""
+  },
+  {
+    "number": 4,
+    "name": "Іщук Анастасія Олександрівна",
+    "region": "Житомирська",
+    "grade": "10",
+    "course": "15,00",
+    "scores": {
+      "remote": 11,
+      "remote_rank": null,
+      "poster": 15,
+      "poster_rank": null,
+      "conference": 16,
+      "conference_rank": null
+    },
+    "total": 15,
+    "place": ""
+  },
+  {
+    "number": 5,
+    "name": "Голомідов Валентин Миколайович",
+    "region": "Закарпатська",
+    "grade": "11",
+    "course": "15,90",
+    "scores": {
+      "remote": 4,
+      "remote_rank": null,
+      "poster": 2,
+      "poster_rank": null,
+      "conference": 2,
+      "conference_rank": null
+    },
+    "total": 2,
+    "overall_rank": "ІІ",
+    "place": ""
+  },
+  {
+    "number": 6,
+    "name": "Гальчинський Григорій Вікторович",
+    "region": "Івано-Франківська",
+    "grade": "9",
+    "course": "12,90",
+    "scores": {
+      "remote": 16,
+      "remote_rank": null,
+      "poster": 14,
+      "poster_rank": null,
+      "conference": 15,
+      "conference_rank": null
+    },
+    "total": 14,
+    "place": ""
+  },
+  {
+    "number": 7,
+    "name": "Добровольський Вадим Володимирович",
+    "region": "Київська",
+    "grade": "11",
+    "course": "15,90",
+    "scores": {
+      "remote": 4,
+      "remote_rank": null,
+      "poster": 4,
+      "poster_rank": null,
+      "conference": 3,
+      "conference_rank": null
+    },
+    "total": 4,
+    "overall_rank": "ІІ",
+    "place": ""
+  },
+  {
+    "number": 8,
+    "name": "Бабак Анастасія Олегівна",
+    "region": "Кіровоградська",
+    "grade": "11",
+    "course": "15,30",
+    "scores": {
+      "remote": 10,
+      "remote_rank": null,
+      "poster": 11,
+      "poster_rank": null,
+      "conference": 10,
+      "conference_rank": null
+    },
+    "total": 12,
+    "place": ""
+  },
+  {
+    "number": 9,
+    "name": "Сенюра Юрій Віталійович",
+    "region": "Львівська",
+    "grade": "10",
+    "course": "15,50",
+    "scores": {
+      "remote": 8,
+      "remote_rank": null,
+      "poster": 11,
+      "poster_rank": null,
+      "conference": 7,
+      "conference_rank": null
+    },
+    "total": 9,
+    "place": ""
+  },
+  {
+    "number": 10,
+    "name": "Куда Дмитро Володимирович",
+    "region": "Полтавська",
+    "grade": "11",
+    "course": "14,40",
+    "scores": {
+      "remote": 14,
+      "remote_rank": null,
+      "poster": 6,
+      "poster_rank": null,
+      "conference": 6,
+      "conference_rank": null
+    },
+    "total": 6,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 11,
+    "name": "Геращенко Максим Михайлович",
+    "region": "Рівненська",
+    "grade": "11",
+    "course": "15,70",
+    "scores": {
+      "remote": 6,
+      "remote_rank": null,
+      "poster": 16,
+      "poster_rank": null,
+      "conference": 13,
+      "conference_rank": null
+    },
+    "total": 16,
+    "place": ""
+  },
+  {
+    "number": 12,
+    "name": "Дергачов Микита Костянтинович",
+    "region": "Харківська",
+    "grade": "9",
+    "course": "16,70",
+    "scores": {
+      "remote": 2,
+      "remote_rank": null,
+      "poster": 6,
+      "poster_rank": null,
+      "conference": 14,
+      "conference_rank": null
+    },
+    "total": 8,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 13,
+    "name": "Артьоменко Дар'я Олексіївна",
+    "region": "Хмельницька",
+    "grade": "11",
+    "course": "15,70",
+    "scores": {
+      "remote": 6,
+      "remote_rank": null,
+      "poster": 10,
+      "poster_rank": null,
+      "conference": 11,
+      "conference_rank": null
+    },
+    "total": 11,
+    "place": ""
+  },
+  {
+    "number": 14,
+    "name": "Розгон Назарій Романович",
+    "region": "Черкаська",
+    "grade": "9",
+    "course": "14,80",
+    "scores": {
+      "remote": 12,
+      "remote_rank": null,
+      "poster": 13,
+      "poster_rank": null,
+      "conference": 7,
+      "conference_rank": null
+    },
+    "total": 10,
+    "place": ""
+  },
+  {
+    "number": 15,
+    "name": "Павлюк Ярослав Вікторович",
+    "region": "Чернігівська",
+    "grade": "8",
+    "course": "13,60",
+    "scores": {
+      "remote": 15,
+      "remote_rank": null,
+      "poster": 9,
+      "poster_rank": null,
+      "conference": 12,
+      "conference_rank": null
+    },
+    "total": 13,
+    "place": ""
+  },
+  {
+    "number": 16,
+    "name": "Сапсай Ростислав Сергійович",
+    "region": "м.",
+    "grade": "Київ",
+    "course": "11",
+    "scores": {
+      "remote": null,
+      "remote_rank": 3,
+      "poster": null,
+      "poster_rank": 1,
+      "conference": null,
+      "conference_rank": 1
+    },
+    "total": null,
+    "overall_rank": "1",
+    "place": "І"
+  },
+  {
+    "number": 1,
+    "name": "Стеблевець Олександр Олександрович",
+    "region": "Волинська",
+    "grade": "11",
+    "course": "15,70",
+    "scores": {
+      "remote": 12,
+      "remote_rank": null,
+      "poster": 7,
+      "poster_rank": null,
+      "conference": 13,
+      "conference_rank": null
+    },
+    "total": 10,
+    "place": ""
+  },
+  {
+    "number": 2,
+    "name": "Ількова Софія Василівна",
+    "region": "Дніпропетровська",
+    "grade": "10",
+    "course": "18,00",
+    "scores": {
+      "remote": 2,
+      "remote_rank": null,
+      "poster": 2,
+      "poster_rank": null,
+      "conference": 1,
+      "conference_rank": null
+    },
+    "total": 2,
+    "overall_rank": "ІІ",
+    "place": ""
+  },
+  {
+    "number": 3,
+    "name": "Сандульський Кирило Романович",
+    "region": "Донецька",
+    "grade": "11",
+    "course": "18,40",
+    "scores": {
+      "remote": 1,
+      "remote_rank": null,
+      "poster": 10,
+      "poster_rank": null,
+      "conference": 8,
+      "conference_rank": null
+    },
+    "total": 7,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 4,
+    "name": "Богінський Іван Альбертович",
+    "region": "Житомирська",
+    "grade": "9",
+    "course": "16,00",
+    "scores": {
+      "remote": 10,
+      "remote_rank": null,
+      "poster": 16,
+      "poster_rank": null,
+      "conference": 16,
+      "conference_rank": null
+    },
+    "total": 15,
+    "place": ""
+  },
+  {
+    "number": 5,
+    "name": "Митровцій Павло Вікторович",
+    "region": "Закарпатська",
+    "grade": "10",
+    "course": "16,70",
+    "scores": {
+      "remote": 6,
+      "remote_rank": null,
+      "poster": 11,
+      "poster_rank": null,
+      "conference": 8,
+      "conference_rank": null
+    },
+    "total": 11,
+    "place": ""
+  },
+  {
+    "number": 6,
+    "name": "Третяк Михайло Петрович",
+    "region": "Івано-Франківська",
+    "grade": "9",
+    "course": "14,80",
+    "scores": {
+      "remote": 15,
+      "remote_rank": null,
+      "poster": 16,
+      "poster_rank": null,
+      "conference": 16,
+      "conference_rank": null
+    },
+    "total": 18,
+    "place": ""
+  },
+  {
+    "number": 7,
+    "name": "Єрьомін Володимир Сергійович",
+    "region": "Київська",
+    "grade": "10",
+    "course": "17,10",
+    "scores": {
+      "remote": 5,
+      "remote_rank": null,
+      "poster": 6,
+      "poster_rank": null,
+      "conference": 6,
+      "conference_rank": null
+    },
+    "total": 6,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 8,
+    "name": "Тютюнніков Артем Дмитрович",
+    "region": "Кіровоградська",
+    "grade": "10",
+    "course": "17,20",
+    "scores": {
+      "remote": 4,
+      "remote_rank": null,
+      "poster": 2,
+      "poster_rank": null,
+      "conference": 1,
+      "conference_rank": null
+    },
+    "total": 3,
+    "overall_rank": "ІІ",
+    "place": ""
+  },
+  {
+    "number": 9,
+    "name": "Дідух Святослав Ігорович",
+    "region": "Львівська",
+    "grade": "11",
+    "course": "14,00",
+    "scores": {
+      "remote": 18,
+      "remote_rank": null,
+      "poster": 16,
+      "poster_rank": null,
+      "conference": 14,
+      "conference_rank": null
+    },
+    "total": 16,
+    "place": ""
+  },
+  {
+    "number": 10,
+    "name": "Коваль Олександр Сергійович",
+    "region": "Полтавська",
+    "grade": "11",
+    "course": "17,60",
+    "scores": {
+      "remote": 3,
+      "remote_rank": null,
+      "poster": 1,
+      "poster_rank": null,
+      "conference": 1,
+      "conference_rank": null
+    },
+    "total": 1,
+    "overall_rank": "І",
+    "place": ""
+  },
+  {
+    "number": 11,
+    "name": "Мацевич Назарій Дмитрович",
+    "region": "Рівненська",
+    "grade": "11",
+    "course": "15,20",
+    "scores": {
+      "remote": 14,
+      "remote_rank": null,
+      "poster": 7,
+      "poster_rank": null,
+      "conference": 6,
+      "conference_rank": null
+    },
+    "total": 9,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 12,
+    "name": "Базуріна Софія Віталіївна",
+    "region": "Сумська",
+    "grade": "10",
+    "course": "16,40",
+    "scores": {
+      "remote": 8,
+      "remote_rank": null,
+      "poster": 7,
+      "poster_rank": null,
+      "conference": 10,
+      "conference_rank": null
+    },
+    "total": 8,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 13,
+    "name": "Рижова Валерія Володимирівна",
+    "region": "Харківська",
+    "grade": "11",
+    "course": "15,50",
+    "scores": {
+      "remote": 13,
+      "remote_rank": null,
+      "poster": 11,
+      "poster_rank": null,
+      "conference": 10,
+      "conference_rank": null
+    },
+    "total": 12,
+    "place": ""
+  },
+  {
+    "number": 14,
+    "name": "Лініх Вероніка Олегівна",
+    "region": "Херсонська",
+    "grade": "10",
+    "course": "14,40",
+    "scores": {
+      "remote": 16,
+      "remote_rank": null,
+      "poster": 11,
+      "poster_rank": null,
+      "conference": 12,
+      "conference_rank": null
+    },
+    "total": 13,
+    "place": ""
+  },
+  {
+    "number": 15,
+    "name": "Коновал Владислав Романович",
+    "region": "Хмельницька",
+    "grade": "9",
+    "course": "16,70",
+    "scores": {
+      "remote": 6,
+      "remote_rank": null,
+      "poster": 2,
+      "poster_rank": null,
+      "conference": 4,
+      "conference_rank": null
+    },
+    "total": 4,
+    "overall_rank": "ІІ",
+    "place": ""
+  },
+  {
+    "number": 16,
+    "name": "Кусяк Максим Юрійович",
+    "region": "Черкаська",
+    "grade": "10",
+    "course": "14,40",
+    "scores": {
+      "remote": 16,
+      "remote_rank": null,
+      "poster": 11,
+      "poster_rank": null,
+      "conference": 18,
+      "conference_rank": null
+    },
+    "total": 17,
+    "place": ""
+  },
+  {
+    "number": 17,
+    "name": "Пригоровська Анна Сергіївна",
+    "region": "Чернігівська",
+    "grade": "11",
+    "course": "16,30",
+    "scores": {
+      "remote": 9,
+      "remote_rank": null,
+      "poster": 15,
+      "poster_rank": null,
+      "conference": 15,
+      "conference_rank": null
+    },
+    "total": 14,
+    "place": ""
+  },
+  {
+    "number": 18,
+    "name": "Телефус Артем Андрійович",
+    "region": "м.",
+    "grade": "Київ",
+    "course": "10",
+    "scores": {
+      "remote": null,
+      "remote_rank": 11,
+      "poster": null,
+      "poster_rank": 2,
+      "conference": null,
+      "conference_rank": 5
+    },
+    "total": null,
+    "overall_rank": "5",
+    "place": "ІІІ"
+  },
+  {
+    "number": 1,
+    "name": "Петрук Михайло Олександрович",
+    "region": "Волинська",
+    "grade": "11",
+    "course": "18,30",
+    "scores": {
+      "remote": 6,
+      "remote_rank": null,
+      "poster": 10,
+      "poster_rank": null,
+      "conference": 1,
+      "conference_rank": null
+    },
+    "total": 3,
+    "overall_rank": "ІІ",
+    "place": ""
+  },
+  {
+    "number": 2,
+    "name": "Четвертак Олег Романович",
+    "region": "Дніпропетровська",
+    "grade": "11",
+    "course": "17,20",
+    "scores": {
+      "remote": 8,
+      "remote_rank": null,
+      "poster": 10,
+      "poster_rank": null,
+      "conference": 18,
+      "conference_rank": null
+    },
+    "total": 15,
+    "place": ""
+  },
+  {
+    "number": 3,
+    "name": "Філь Дмитро Дмитрович",
+    "region": "Донецька",
+    "grade": "8",
+    "course": "18,00",
+    "scores": {
+      "remote": 7,
+      "remote_rank": null,
+      "poster": 1,
+      "poster_rank": null,
+      "conference": 9,
+      "conference_rank": null
+    },
+    "total": 2,
+    "overall_rank": "ІІ",
+    "place": ""
+  },
+  {
+    "number": 4,
+    "name": "Новицький Олексій Олександрович",
+    "region": "Житомирська",
+    "grade": "11",
+    "course": "16,10",
+    "scores": {
+      "remote": 13,
+      "remote_rank": null,
+      "poster": 7,
+      "poster_rank": null,
+      "conference": 7,
+      "conference_rank": null
+    },
+    "total": 9,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 5,
+    "name": "Жаба Дарина Василівна",
+    "region": "Закарпатська",
+    "grade": "11",
+    "course": "14,90",
+    "scores": {
+      "remote": 20,
+      "remote_rank": null,
+      "poster": 14,
+      "poster_rank": null,
+      "conference": 19,
+      "conference_rank": null
+    },
+    "total": 18,
+    "place": ""
+  },
+  {
+    "number": 6,
+    "name": "Сольона Іларія Романівна",
+    "region": "Запорізька",
+    "grade": "11",
+    "course": "18,50",
+    "scores": {
+      "remote": 4,
+      "remote_rank": null,
+      "poster": 4,
+      "poster_rank": null,
+      "conference": 12,
+      "conference_rank": null
+    },
+    "total": 7,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 7,
+    "name": "Гордій Святослав Дмитрович",
+    "region": "Івано-Франківська",
+    "grade": "11",
+    "course": "16,60",
+    "scores": {
+      "remote": 11,
+      "remote_rank": null,
+      "poster": 15,
+      "poster_rank": null,
+      "conference": 10,
+      "conference_rank": null
+    },
+    "total": 13,
+    "place": ""
+  },
+  {
+    "number": 8,
+    "name": "Потапенко Андрій Віталійович",
+    "region": "Київська",
+    "grade": "10",
+    "course": "18,40",
+    "scores": {
+      "remote": 5,
+      "remote_rank": null,
+      "poster": 16,
+      "poster_rank": null,
+      "conference": 3,
+      "conference_rank": null
+    },
+    "total": 6,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 9,
+    "name": "Третяк Ольга Михайлівна",
+    "region": "Кіровоградська",
+    "grade": "11",
+    "course": "18,90",
+    "scores": {
+      "remote": 2,
+      "remote_rank": null,
+      "poster": 3,
+      "poster_rank": null,
+      "conference": 1,
+      "conference_rank": null
+    },
+    "total": 1,
+    "overall_rank": "І",
+    "place": ""
+  },
+  {
+    "number": 10,
+    "name": "Остапів Назар Вікторович",
+    "region": "Львівська",
+    "grade": "9",
+    "course": "15,20",
+    "scores": {
+      "remote": 16,
+      "remote_rank": null,
+      "poster": 18,
+      "poster_rank": null,
+      "conference": 5,
+      "conference_rank": null
+    },
+    "total": 16,
+    "place": ""
+  },
+  {
+    "number": 11,
+    "name": "Поправка Богдан Сергійович",
+    "region": "Одеська",
+    "grade": "9",
+    "course": "18,80",
+    "scores": {
+      "remote": 3,
+      "remote_rank": null,
+      "poster": 5,
+      "poster_rank": null,
+      "conference": 5,
+      "conference_rank": null
+    },
+    "total": 4,
+    "overall_rank": "ІІ",
+    "place": ""
+  },
+  {
+    "number": 12,
+    "name": "Бровко Богдан Віталійович",
+    "region": "Полтавська",
+    "grade": "9",
+    "course": "16,40",
+    "scores": {
+      "remote": 12,
+      "remote_rank": null,
+      "poster": 8,
+      "poster_rank": null,
+      "conference": 12,
+      "conference_rank": null
+    },
+    "total": 12,
+    "place": ""
+  },
+  {
+    "number": 13,
+    "name": "Леоновець Леся Анатоліївна",
+    "region": "Рівненська",
+    "grade": "11",
+    "course": "19,20",
+    "scores": {
+      "remote": 1,
+      "remote_rank": null,
+      "poster": 12,
+      "poster_rank": null,
+      "conference": 14,
+      "conference_rank": null
+    },
+    "total": 10,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 14,
+    "name": "Павленко Володимир Іванович",
+    "region": "Сумська",
+    "grade": "10",
+    "course": "16,10",
+    "scores": {
+      "remote": 14,
+      "remote_rank": null,
+      "poster": 20,
+      "poster_rank": null,
+      "conference": 20,
+      "conference_rank": null
+    },
+    "total": 20,
+    "place": ""
+  },
+  {
+    "number": 15,
+    "name": "Марішин Іван Андрійович",
+    "region": "Тернопільська",
+    "grade": "ІІ",
+    "course": "15,20",
+    "scores": {
+      "remote": 16,
+      "remote_rank": null,
+      "poster": 17,
+      "poster_rank": null,
+      "conference": 16,
+      "conference_rank": null
+    },
+    "total": 17,
+    "place": ""
+  },
+  {
+    "number": 16,
+    "name": "Теляшенко Ярослав Дмитрович",
+    "region": "Харківська",
+    "grade": "10",
+    "course": "15,10",
+    "scores": {
+      "remote": 19,
+      "remote_rank": null,
+      "poster": 2,
+      "poster_rank": null,
+      "conference": 8,
+      "conference_rank": null
+    },
+    "total": 8,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 17,
+    "name": "Ільков Ярослав Олександрович",
+    "region": "Хмельницька",
+    "grade": "9",
+    "course": "15,20",
+    "scores": {
+      "remote": 16,
+      "remote_rank": null,
+      "poster": 19,
+      "poster_rank": null,
+      "conference": 17,
+      "conference_rank": null
+    },
+    "total": 19,
+    "place": ""
+  },
+  {
+    "number": 18,
+    "name": "Половян Олексій Олексійович",
+    "region": "Черкаська",
+    "grade": "11",
+    "course": "16,70",
+    "scores": {
+      "remote": 9,
+      "remote_rank": null,
+      "poster": 12,
+      "poster_rank": null,
+      "conference": 15,
+      "conference_rank": null
+    },
+    "total": 14,
+    "place": ""
+  },
+  {
+    "number": 19,
+    "name": "Мельник Всеволод Андрійович",
+    "region": "Чернігівська",
+    "grade": "11",
+    "course": "16,70",
+    "scores": {
+      "remote": 9,
+      "remote_rank": null,
+      "poster": 5,
+      "poster_rank": null,
+      "conference": 4,
+      "conference_rank": null
+    },
+    "total": 5,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 20,
+    "name": "Лазоренко Георгій Сергійович",
+    "region": "м.",
+    "grade": "Київ",
+    "course": "8",
+    "scores": {
+      "remote": null,
+      "remote_rank": 15,
+      "poster": null,
+      "poster_rank": 8,
+      "conference": null,
+      "conference_rank": 11
+    },
+    "total": null,
+    "overall_rank": "11",
+    "place": ""
+  },
+  {
+    "number": 1,
+    "name": "Демчук Давид Андрійович",
+    "region": "Волинська",
+    "grade": "10",
+    "course": "18,50",
+    "scores": {
+      "remote": 7,
+      "remote_rank": null,
+      "poster": 7,
+      "poster_rank": null,
+      "conference": 7,
+      "conference_rank": null
+    },
+    "total": 8,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 2,
+    "name": "Чернишова Софія Юріївна",
+    "region": "Дніпропетровська",
+    "grade": "9",
+    "course": "17,60",
+    "scores": {
+      "remote": 11,
+      "remote_rank": null,
+      "poster": 15,
+      "poster_rank": null,
+      "conference": 16,
+      "conference_rank": null
+    },
+    "total": 15,
+    "place": ""
+  },
+  {
+    "number": 3,
+    "name": "Теличко Микита Сергійович",
+    "region": "Донецька",
+    "grade": "10",
+    "course": "19,20",
+    "scores": {
+      "remote": 3,
+      "remote_rank": null,
+      "poster": 2,
+      "poster_rank": null,
+      "conference": 4,
+      "conference_rank": null
+    },
+    "total": 2,
+    "overall_rank": "ІІ",
+    "place": ""
+  },
+  {
+    "number": 4,
+    "name": "Казмірчук Катерина Павлівна",
+    "region": "Житомирська",
+    "grade": "10",
+    "course": "16,90",
+    "scores": {
+      "remote": 13,
+      "remote_rank": null,
+      "poster": 15,
+      "poster_rank": null,
+      "conference": 14,
+      "conference_rank": null
+    },
+    "total": 16,
+    "place": ""
+  },
+  {
+    "number": 5,
+    "name": "Сухар Василь Васильович",
+    "region": "Закарпатська",
+    "grade": "11",
+    "course": "19,50",
+    "scores": {
+      "remote": 1,
+      "remote_rank": null,
+      "poster": 10,
+      "poster_rank": null,
+      "conference": 6,
+      "conference_rank": null
+    },
+    "total": 7,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 6,
+    "name": "Процюк Віталій Вікторович",
+    "region": "Івано-Франківська",
+    "grade": "10",
+    "course": "16,50",
+    "scores": {
+      "remote": 15,
+      "remote_rank": null,
+      "poster": 14,
+      "poster_rank": null,
+      "conference": 13,
+      "conference_rank": null
+    },
+    "total": 14,
+    "place": ""
+  },
+  {
+    "number": 7,
+    "name": "Ковтун Анна Олександрівна",
+    "region": "Київська",
+    "grade": "11",
+    "course": "16,60",
+    "scores": {
+      "remote": 14,
+      "remote_rank": null,
+      "poster": 13,
+      "poster_rank": null,
+      "conference": 10,
+      "conference_rank": null
+    },
+    "total": 13,
+    "place": ""
+  },
+  {
+    "number": 8,
+    "name": "Ніколенко Владислав Анатолійович",
+    "region": "Кіровоградська",
+    "grade": "11",
+    "course": "18,00",
+    "scores": {
+      "remote": 10,
+      "remote_rank": null,
+      "poster": 2,
+      "poster_rank": null,
+      "conference": 3,
+      "conference_rank": null
+    },
+    "total": 3,
+    "overall_rank": "ІІ",
+    "place": ""
+  },
+  {
+    "number": 9,
+    "name": "Яблонський Андрій Юрійович",
+    "region": "Львівська",
+    "grade": "11",
+    "course": "19,50",
+    "scores": {
+      "remote": 1,
+      "remote_rank": null,
+      "poster": 1,
+      "poster_rank": null,
+      "conference": 2,
+      "conference_rank": null
+    },
+    "total": 1,
+    "overall_rank": "І",
+    "place": ""
+  },
+  {
+    "number": 10,
+    "name": "Гречка Костянтин Романович",
+    "region": "Полтавська",
+    "grade": "10",
+    "course": "19,20",
+    "scores": {
+      "remote": 3,
+      "remote_rank": null,
+      "poster": 5,
+      "poster_rank": null,
+      "conference": 14,
+      "conference_rank": null
+    },
+    "total": 10,
+    "place": ""
+  },
+  {
+    "number": 11,
+    "name": "Онищук Богуслав Ігорович",
+    "region": "Рівненська",
+    "grade": "10",
+    "course": "18,40",
+    "scores": {
+      "remote": 8,
+      "remote_rank": null,
+      "poster": 7,
+      "poster_rank": null,
+      "conference": 10,
+      "conference_rank": null
+    },
+    "total": 9,
+    "place": ""
+  },
+  {
+    "number": 12,
+    "name": "Радько Євген Олександрович",
+    "region": "Сумська",
+    "grade": "11",
+    "course": "18,30",
+    "scores": {
+      "remote": 9,
+      "remote_rank": null,
+      "poster": 11,
+      "poster_rank": null,
+      "conference": 12,
+      "conference_rank": null
+    },
+    "total": 12,
+    "place": ""
+  },
+  {
+    "number": 13,
+    "name": "Савчинський Іван Васильович",
+    "region": "Тернопільська",
+    "grade": "11",
+    "course": "16,40",
+    "scores": {
+      "remote": 16,
+      "remote_rank": null,
+      "poster": 4,
+      "poster_rank": null,
+      "conference": 1,
+      "conference_rank": null
+    },
+    "total": 4,
+    "overall_rank": "ІІ",
+    "place": ""
+  },
+  {
+    "number": 14,
+    "name": "Гончаренко Альона Віталіївна",
+    "region": "Харківська",
+    "grade": "11",
+    "course": "17,60",
+    "scores": {
+      "remote": 11,
+      "remote_rank": null,
+      "poster": 11,
+      "poster_rank": null,
+      "conference": 9,
+      "conference_rank": null
+    },
+    "total": 11,
+    "place": ""
+  },
+  {
+    "number": 15,
+    "name": "Лисак Максим Володимирович",
+    "region": "Черкаська",
+    "grade": "11",
+    "course": "18,90",
+    "scores": {
+      "remote": 6,
+      "remote_rank": null,
+      "poster": 5,
+      "poster_rank": null,
+      "conference": 8,
+      "conference_rank": null
+    },
+    "total": 6,
+    "overall_rank": "ІІІ",
+    "place": ""
+  },
+  {
+    "number": 16,
+    "name": "Сидорчук Андрій Вікторович",
+    "region": "м.",
+    "grade": "Київ",
+    "course": "10",
+    "scores": {
+      "remote": null,
+      "remote_rank": 3,
+      "poster": null,
+      "poster_rank": 9,
+      "conference": null,
+      "conference_rank": 5
+    },
+    "total": null,
+    "overall_rank": "5",
+    "place": "ІІІ"
+  }
+]
